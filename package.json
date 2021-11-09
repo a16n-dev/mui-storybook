@@ -1,5 +1,5 @@
 {
-  "name": "@anthonyhienvu/typescript-react-storybook-template",
+  "name": "mui5-storybook-typescript",
   "version": "0.4.0",
   "description": "Project template for quickly building a React component library with Storybook.js & TypeScript.",
   "license": "MIT",
@@ -8,7 +8,7 @@
   "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AVu120/typescript-react-storybook-template.git"
+    "url": "git+https://github.com/alexn400/mui-storybook.git"
   },
   "author": "Alexander Nicholson",
   "devDependencies": {
@@ -45,8 +45,7 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build": "rollup -c",
-    "prePublish": "cp package.json lib",
+    "build": "rollup -c && cp package.json lib",
     "deploy-storybook": "storybook-to-ghpages",
     "clean": "rm -rf node_modules && yarn"
   }
